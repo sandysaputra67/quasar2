@@ -1,6 +1,5 @@
 <template>
   <div class="row justify-center default-margin-top" v-if="showBanner">
-    <LogoImg style="max-height: inherit" />
   </div>
   <div v-if="showDescription" class="row justify-center default-margin-top">
     <AppDescription />
@@ -34,12 +33,11 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import AppDescription from './AppDescription.vue';
-import LogoImg from './LogoImg.vue';
 // import appConfig from 'src/appConfig';
 
 export default defineComponent({
   name: 'AboutSection',
-  components: { AppDescription, LogoImg },
+  components: { AppDescription },
   props: {
     showBanner: {
       type: Boolean,

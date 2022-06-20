@@ -2,6 +2,7 @@
   <MainLayout ref="mainLayoutComponent">
     <template v-slot:desktop-toolbar>
       <div class="col row header-el">
+
         <div style="max-width: 1000px" class="col row justify-evenly">
           <FilterElements
             v-model:type="currentType"
@@ -15,7 +16,6 @@
 
     <template v-slot:mobile-drawer>
       <div class="col" style="width: 100%">
-        <LogoImg style="width: inherit" class="default-margin-top" />
         <div
           class="default-margin-top column justify-between no-wrap"
           style="height: 30%"
@@ -44,15 +44,12 @@ import { ItemType } from 'components/models';
 import ItemList from 'components/ItemList.vue';
 import MainLayout from 'src/layouts/MainLayout.vue';
 import FilterElements from 'src/components/FilterElements.vue';
-import LogoImg from 'src/components/LogoImg.vue';
-
 export default defineComponent({
   name: 'MainPage',
   components: {
     ItemList,
     MainLayout,
     FilterElements,
-    LogoImg,
   },
   setup() {
     const itemListComponent = ref<InstanceType<typeof ItemList> | null>(null);
