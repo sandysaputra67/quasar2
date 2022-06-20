@@ -1,0 +1,35 @@
+.q-app {
+  font: 300;
+  background-color: $primary;
+}
+
+.q-header {
+  border-bottom: 1px solid #424246;
+  font-size: 1rem;
+}
+
+.q-drawer__content {
+  background-color: $primary;
+}
+
+.q-toolbar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.q-layout {
+  background-color: $primary;
+}
+
+.q-page-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.header-el {
+  max-height: 56px;
+}
+
+.default-margin-top {
+  margin-top: 25px;
+}
